@@ -24,7 +24,7 @@ public class DesertShop
              System.out.println("Enter amount of\nCandy\nIcecream\nCookie\nto purchase :");
              Customer customer = new Customer(sc.nextInt(),sc.nextInt(),sc.nextInt(), user);
              System.out.println(customer.getBill(customer.iceCreamCount, customer.candyCount, customer.cookieCount));
-             System.out.println(customer.candyCount(1));
+             //System.out.println(customer.candyCount(1));
              System.out.println("Please Visit Us Again "+user);
          }		
 
