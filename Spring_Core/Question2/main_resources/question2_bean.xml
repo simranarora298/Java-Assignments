@@ -1,0 +1,35 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+ 	<bean id="question" class="spring.question2.Question">
+ 		<property name="questionId" value="1"/>
+ 		<property name="question" value="Where do you live?"/>
+ 		<property name="answer">
+ 			<!-- <list>
+ 				<value>Delhi</value>
+ 				<value>Mumbai</value>
+ 				<value>Banglore</value>
+ 				<value>Pune</value>
+ 				<value>Mumbai</value>
+ 			</list> -->
+ 			<!-- <set>
+ 				<value>Delhi</value>
+ 				<value>Mumbai</value>
+ 				<value>Banglore</value>
+ 				<value>Pune</value>
+ 				<value>Mumbai</value>
+ 			</set> -->
+ 			
+ 			<map>
+ 				<entry key="1" value="Delhi"></entry>
+ 				<entry key="2" value="Mumbai"></entry>
+ 				<entry key="3" value="Banglore"></entry>
+ 				<entry key="4" value="Pune"></entry>
+ 				<entry key="2" value="Mumbai"></entry>
+ 				<entry key="5" value="Banglore"></entry>
+ 			</map>
+ 		</property>
+ 	</bean>
+ </beans>

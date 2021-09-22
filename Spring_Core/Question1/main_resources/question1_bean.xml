@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+	<bean id="customer" class="spring.question1.Customer" autowire="byName">
+		<property name="customerId" value="1"/>
+		<property name="customerName" value="Sandy"/>
+		<property name="customerContact" value="123456789"/>
+	</bean>
+	<bean id="customerAddress" class="spring.question1.Address" autowire="byName">
+		<property name="street" value="Vikas Marg"/>
+		<property name="city" value="East Delhi"/>
+		<property name="state" value="Delhi"/>
+		<property name="zipcode" value="110092"/>
+		<property name="country" value="India"/>
+	</bean>
+     
+</beans>
